@@ -43,6 +43,8 @@ $(document).ready(function(){
         }
     })
 
+
+
     $('.lista-veiculos button').click(function(){
         const destino = $('#contato')
 
@@ -54,5 +56,18 @@ $(document).ready(function(){
             scrollTop: destino.offset().top
         }, 1000)
     })
+
+
+})
+
+$('#formulario').submit(function(event){
+    event.preventDefault()
+    alert('formulario enviado')
+    
+    $('#nome').val('')
+    $('#telefone').val('')
+    $('#email').val('')
+    $('#veiculo-interesse').val('')
+    $('#mensagem').val('')
 
 })

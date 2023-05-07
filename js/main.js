@@ -64,10 +64,5 @@ $('#formulario').submit(function(event){
     event.preventDefault()
     alert('formulario enviado')
     
-    $('#nome').val('')
-    $('#telefone').val('')
-    $('#email').val('')
-    $('#veiculo-interesse').val('')
-    $('#mensagem').val('')
-
+    this.reset()
 })
